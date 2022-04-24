@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius:50%;
+    border: 5px solid gray;
+}
+#container{
+    display: grid;
+    grid-template: 100vh / 1fr 2fr;
+}
+#header{
+    background-color: blue;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:10%;
+}
+#header-list{
+    list-style:none;
+    
+}
+.item-list{
+    margin: 15px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+#description{
+   padding: 15px;
+   text-align: center;
+   background-color: brown;
+}
+#description-list{
+    list-style: none;
+   
+}
+.item-list-description{
+    display: inline-block;
+    margin: 30px;
+    width: 100px;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+a{
+    color:beige;
+    text-decoration: none;
+}
+.face::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./img/iconFacebook.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gmail::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./img/iconGoogle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+h2{
+    font-size: 20px;
+    margin: 15px;
+}
+
+.item-list-description:hover{
+    background-color: rgb(131, 32, 32);
+}
+.item-list:hover{
+    font-size: 1.2rem;
+}
